@@ -1,24 +1,126 @@
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.body {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: grey;
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fb; /* Light background for the page */
+    color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     flex-direction: column;
+    padding: 20px;
 }
 
-.country_name{
-    background-color: aqua;
-    font-family: 'Times New Roman', Times, serif;
-
+/* Form Styling */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px;
 }
-.country{
-    align-content:top ;
+
+form label {
+    font-size: 1.2rem;
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-top: 10px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Button Styling */
+button {
+    background-color: #6c63ff;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #5746e5;
+}
+
+/* Section Styling for 'country-info' and 'bordering-countries' */
+section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Specific Styling for 'country-info' Section */
+#country-info p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#country-info img {
+    width: 150px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific Styling for 'bordering-countries' Section */
+#bordering-countries p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#bordering-countries img {
+    width: 80px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    /* Adjust form and sections to fit smaller screens */
+    form, section {
+        width: 100%;
+        padding: 15px;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 15px;
+    }
 }
