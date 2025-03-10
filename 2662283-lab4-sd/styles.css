@@ -1,24 +1,6 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-/* Body Styling */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f7fb; /* Light background for the page */
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    flex-direction: column;
-    padding: 20px;
-}
 
-/* Form Styling */
+
 form {
     background-color: #fff;
     padding: 20px;
@@ -37,17 +19,7 @@ form label {
     display: block;
 }
 
-form input[type="text"] {
-    width: 100%;
-    padding: 12px;
-    font-size: 1rem;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    margin-top: 10px;
-    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
-}
 
-/* Button Styling */
 button {
     background-color: #6c63ff;
     color: white;
@@ -61,24 +33,17 @@ button {
     margin-top: 20px;
 }
 
-/* Button Hover Effect */
-button:hover {
-    background-color: #5746e5;
-}
-
-/* Section Styling for 'country-info' and 'bordering-countries' */
 section {
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
     width: 100%;
     max-width: 600px;
     text-align: center;
 }
 
-/* Specific Styling for 'country-info' Section */
+
 #country-info p {
     font-size: 1.2rem;
     color: #333;
@@ -93,7 +58,7 @@ section {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Specific Styling for 'bordering-countries' Section */
+
 #bordering-countries p {
     font-size: 1.1rem;
     color: #333;
@@ -108,19 +73,3 @@ section {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-    /* Adjust form and sections to fit smaller screens */
-    form, section {
-        width: 100%;
-        padding: 15px;
-    }
-
-    button {
-        font-size: 1rem;
-    }
-
-    section {
-        padding: 15px;
-    }
-}
