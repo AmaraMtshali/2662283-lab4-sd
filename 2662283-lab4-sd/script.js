@@ -6,7 +6,7 @@ document.getElementById("press").addEventListener("click", function() {
         // Construct the API URL for fetching country data
         const url = `https://restcountries.com/v3.1/name/${countryName}`;
 
-        // Fetch data from the API
+        
         fetch(url)
             .then(response => {
                 if (!response.ok) {
@@ -17,7 +17,7 @@ document.getElementById("press").addEventListener("click", function() {
             .then(data => {
                 const country = data[0]; 
                 
-                
+                displayCountryInfo(country);
                 displayBorderingCountries(country);
             })
             .catch(error => {
