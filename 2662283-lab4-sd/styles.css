@@ -7,7 +7,6 @@
 .body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: grey;
-    color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,10 +14,11 @@
     flex-direction: column;
 }
 
-.form {
-    background-color: burlywood;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+.country_name{
+    background-color: aqua;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.country{
+    align-content:top ;
 }
