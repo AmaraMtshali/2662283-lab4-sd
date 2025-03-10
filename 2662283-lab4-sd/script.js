@@ -17,7 +17,7 @@ document.getElementById("press").addEventListener("click", function() {
             .then(data => {
                 const country = data[0]; 
                 
-                /
+                
                 displayBorderingCountries(country);
             })
             .catch(error => {
