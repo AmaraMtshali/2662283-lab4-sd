@@ -1,35 +1,31 @@
-nfig<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Countries_API</title>
-    <script src="/script.js"></script>
+    <script src="script.js" defer></script>
 </head> 
 <body>
 
-    <form >
-        <label for="country">Enter country name</label>
+    <form>
+        <label for="country">Enter country name:</label>
         <input type="text" id="country_name" name="country" placeholder="Country Name">
-
-
     </form>
 
     <button id="press">Submit</button>
 
     <section id="country-info">
-    <!-- <p id="cap_id">capital:</p>
-
-    <p id="pop_id">population: </p>
-
-    <p id="reg_id">region:</p> -->
-
-    <img src="flag" alt="County flag">
-
+        <p id="cap_id">Capital: </p>
+        <p id="pop_id">Population: </p>
+        <p id="reg_id">Region: </p>
+        <img id="flag_img" alt="Country flag">
     </section>
-    <section id="bordering-countries ">
+
+    <section id="bordering-countries">
         <p id="b_name"></p>
-        <img src="border_flag" alt="other countries with borders.">
+        <img id="border_flag" alt="Other countries with borders">
     </section>
+
 </body>
 </html>
